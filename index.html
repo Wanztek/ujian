@@ -1,0 +1,66 @@
+<html>
+	<head></head>
+	<style>
+		body{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+		input[type="text"]{
+			padding:20px 30px;
+			border:2px solid #000;
+			border-radius:5px;
+			font-size:20px;
+			font-weight:bold;
+		}
+		input[type="button"]{
+			height:80px;
+			width:77px;
+			font-size:15px;
+			border-radius:5px;
+			background:#00ffff;
+			font-weight:bold;
+		}
+	</style>
+	<body>
+		<form name="cal">
+			<table>
+				<input type="text" name="ans" readonly>
+				<tr>
+					<td><input type="button" value="C" onClick="document.cal.ans.value=''"></td>
+					<td><input type="button" value="Wanz" onClick="document.cal.ans.value+='Terima kasih'"></td></td>
+					<td><input type="button" value="^" onClick="document.cal.ans.value+='**'"></td></td>
+					<td><input type="button" value="/" onClick="document.cal.ans.value+='/'"></td></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" value="7" onClick="document.cal.ans.value+='7'"></td></td>
+					<td><input type="button" value="8" onClick="document.cal.ans.value+='8'"></td></td>
+					<td><input type="button" value="9" onClick="document.cal.ans.value+='9'"></td></td>
+					<td><input type="button" value="x" onClick="document.cal.ans.value+='*'"></td></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" value="4" onClick="document.cal.ans.value+='4'"></td>
+					<td><input type="button" value="5" onClick="document.cal.ans.value+='5'"></td>
+					<td><input type="button" value="6" onClick="document.cal.ans.value+='6'"></td>
+					<td><input type="button" value="+" onClick="document.cal.ans.value+='+'"></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" value="1" onClick="document.cal.ans.value+='1'"></td>
+					<td><input type="button" value="2" onClick="document.cal.ans.value+='2'"></td>
+					<td><input type="button" value="3" onClick="document.cal.ans.value+='3'"></td>
+					<td><input type="button" value="-" onClick="document.cal.ans.value+='-'"></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" value="." onClick="document.cal.ans.value+='.'"></td>
+					<td><input type="button" value="0" onClick="document.cal.ans.value+='0'"></td>
+					<td><input type="button" value="00" onClick="document.cal.ans.value+='00'"></td>
+					<td><input type="button" value="=" onClick="document.cal.ans.value=eval(cal.ans.value)"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
